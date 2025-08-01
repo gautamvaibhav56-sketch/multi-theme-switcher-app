@@ -105,3 +105,4 @@ This project was developed as part of the **React Frontend Developer Assessment*
 ---
 
 **Made with ❤️ using React + Tailwind + TypeScript**
+
