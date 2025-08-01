@@ -1,7 +1,7 @@
-import { createContext, useState, ReactNode, useEffect } from "react";
+import { createContext, ReactNode, useEffect, useState } from "react";
 import ThemeOne from "../pages/ThemeOne";
-import ThemeTwo from "../pages/ThemeTwo";
 import ThemeThree from "../pages/ThemeThree";
+import ThemeTwo from "../pages/ThemeTwo";
 
 /**
  * Interface defining a single theme configuration.
@@ -49,7 +49,6 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
   // Persist theme selection in localStorage on change
   useEffect(() => {
-    console.log("setting theme to localStorage:", theme);
     localStorage.setItem("theme", theme.toString());
   }, [theme]);
 

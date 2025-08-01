@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import Dropdown from "./Dropdown";
-import { ThemeContext } from "../contexts/themesContext";
 import { NavLink } from "react-router-dom";
+import { ThemeContext } from "../contexts/themesContext";
+import Dropdown from "./Dropdown";
 
 /**
  * Header component that displays the navigation bar.

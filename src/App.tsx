@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import { ThemeContext } from "./contexts/themesContext";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 
 /**
