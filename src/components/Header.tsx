@@ -34,28 +34,31 @@ const Header: React.FC = () => {
   return (
     // Fixed header with full width, padding, and theme-based styling
     <div
-      className={`fixed w-full flex justify-between items-center px-2 z-50 ${getHeaderClasses()}`}
+      className={`fixed w-full px-4 py-2 z-50 ${getHeaderClasses()}`}
       role="banner"
     >
-      <ul className="flex space-x-4 px-4">
-        <li className="transition-transform duration-500 p-4 cursor-pointer hover:scale-125 hover:opacity-60 mx-6">
-          <NavLink to="/">Logo</NavLink>
-        </li>
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+        {/* Navigation Section */}
+        <ul className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6">
+          <li className="lg:mx-16 text-lg font-bold cursor-pointer hover:opacity-80  hover:scale-125 transition duration-500">
+            <NavLink to="/">Logo</NavLink>
+          </li>
+          <li className="cursor-pointer hover:opacity-80 hover:scale-125 transition duration-500">
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li className="cursor-pointer hover:opacity-80 hover:scale-125 transition duration-500">
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li className="cursor-pointer hover:opacity-80 hover:scale-125 transition duration-500">
+            <NavLink to="/contact">Contact</NavLink>
+          </li>
+        </ul>
 
-        {/* navigation links */}
-        <li className="transition-transform duration-500 p-4 cursor-pointer hover:scale-125 hover:opacity-60">
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li className="transition-transform duration-500 p-4 cursor-pointer hover:scale-125 hover:opacity-60">
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li className="transition-transform duration-500 p-4 cursor-pointer hover:scale-125 hover:opacity-60">
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-      </ul>
-
-      {/* Theme selection dropdown */}
-      <Dropdown />
+        {/* Dropdown aligned below nav on mobile */}
+        <div className="mt-3 sm:mt-0 sm:ml-auto">
+          <Dropdown />
+        </div>
+      </div>
     </div>
   );
 };
