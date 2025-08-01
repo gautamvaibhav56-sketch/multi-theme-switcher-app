@@ -27,7 +27,7 @@ const Dropdown: React.FC = () => {
     <select
       value={selected}
       onChange={handleChange}
-      className="rounded animate-bounce cursor-pointer hover:animate-none px-2 py-1 sm:mx-6 hover:opacity-60 transition-all duration-500"
+      className="rounded animate-bounce cursor-pointer hover:animate-none px-2 py-1 sm:mr-10 hover:opacity-60 transition-all duration-500"
     >
       {themeConfig.map((ele: ThemeConfigItem) => (
         <option className="text-black" key={ele.id} value={ele.name}>
