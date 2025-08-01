@@ -53,7 +53,7 @@ const ThemeThree: React.FC = () => {
       </h1>
 
       {/* Subheading */}
-      <p className="text-center text-white mb-8 font-medium">
+      <p className="text-center text-white mb-8 font-medium sm:text-2xl">
         A fun, colorful card layout. Products are fetched and shown here.
       </p>
 
