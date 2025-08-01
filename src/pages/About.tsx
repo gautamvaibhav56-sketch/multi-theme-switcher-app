@@ -33,7 +33,7 @@ const About: React.FC = () => {
   return (
     // Apply dynamic theme classes and center the content
     <div className={`${getThemeClasses()} flex items-center justify-center`}>
-      <div className="text-3xl text-center m-32">
+      <div className="sm:text-3xl text-center sm:m-32 m-4">
         <p>
           This is the Multi Theme Chooser App. Currently we are serving 3
           themes.

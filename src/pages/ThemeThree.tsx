@@ -48,18 +48,18 @@ const ThemeThree: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 via-red-500 via-yellow-300 to-green-500 text-black py-24 px-8 font-['Pacifico']">
       {/* Heading */}
-      <h1 className="text-4xl font-bold mb-4 text-center text-white drop-shadow">
+      <h1 className="sm:text-4xl font-bold mb-4 text-center text-white drop-shadow">
         Welcome To Awesome & Colorful Theme
       </h1>
 
       {/* Subheading */}
-      <p className="text-center text-white/90 mb-8 font-medium">
+      <p className="text-center text-white mb-8 font-medium">
         A fun, colorful card layout. Products are fetched and shown here.
       </p>
 
       {/* Loading State */}
       {data.length === 0 ? (
-        <div className="text-center text-5xl animate-bounce text-white sm:text-3xl">
+        <div className="text-center sm:text-5xl animate-bounce text-white text-3xl">
           Hold On! Products are Loading 😃
         </div>
       ) : (
