@@ -29,13 +29,14 @@ A responsive, theme-switchable React application built with TypeScript, Tailwind
 - **Tailwind CSS**
 - **React Router DOM**
 - **Context API**
+- **Vite**
 - **Fake Store API**
 
 ---
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 src/
 ├── components/
 │   ├── Header.tsx
@@ -51,29 +52,48 @@ src/
 │   └── NotFound.tsx
 ├── App.tsx
 └── main.tsx
-\`\`\`
+```
 
 ---
 
 ## 🧪 Getting Started
 
-### 📦 Install Dependencies
+### 📦 1. Clone the repository
 
-\`\`\`bash
+```bash
+git clone https://github.com/gautamvaibhav56-sketch/multi-theme-switcher-app
+cd multi-theme-switcher-app
+```
+
+### 📦 2. Install dependencies
+
+```bash
 npm install
-\`\`\`
+```
 
-### 🚀 Run the App Locally
+### 🚀 3. Run the app locally (for development)
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
-### 🔧 Build for Production
+The app will be available at [http://localhost:5173](http://localhost:5173).
 
-\`\`\`bash
+### 🧱 4. Build for production
+
+```bash
 npm run build
-\`\`\`
+```
+
+The production-ready files will be output to the `dist/` directory.
+
+### 🔍 5. Preview the production build locally (optional)
+
+```bash
+npm run preview
+```
+
+> This is useful to test the production build before deploying.
 
 ---
 
@@ -81,10 +101,17 @@ npm run build
 
 | Route         | Description                          |
 |---------------|--------------------------------------|
-| \`/\`           | Themed Home Page (based on selection)|
-| \`/about\`      | Static About page                    |
-| \`/contact\`    | Static Contact page                  |
-| \`*\`           | 404 Fallback Page                    |
+| `/`           | Themed Home Page (based on selection)|
+| `/about`      | Static About page                    |
+| `/contact`    | Static Contact page                  |
+| `*`           | 404 Fallback Page                    |
+
+---
+
+## 🌐 Live Demo
+
+Check out the live deployed app here:  
+👉 [https://themeswitchermulti.netlify.app](https://themeswitchermulti.netlify.app)
 
 ---
 
@@ -96,13 +123,10 @@ This project was developed as part of the **React Frontend Developer Assessment*
 
 ## 📬 Contact
 
-**Hipster Pte. Ltd.**  
-📍 75 Ayer Rajah Crescent, #01-04, Singapore 139953  
-📧 hr@hipster-inc.com  
-📞 +65 8231 4107  
-🌐 [www.hipster-inc.com](https://www.hipster-inc.com)
-
+**Vaibhav Gautam - React Developer**  
+📍 Kota, Rajasthan  
+📧 gautamvaibhav56@gmail.com  
+📞 +91-9024419322
 ---
 
 **Made with ❤️ using React + Tailwind + TypeScript**
-

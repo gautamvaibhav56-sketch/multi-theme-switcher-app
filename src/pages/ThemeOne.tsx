@@ -21,7 +21,7 @@ const ThemeOne: React.FC = () => {
 
       {/* Toggle button */}
       <button
-        className="border bg-gray-900 p-2 px-6 text-white m-10 rounded-md hover:bg-gray-600 transition duration-500"
+        className="border bg-gray-900 p-2 px-6 text-white m-10 rounded-md hover:bg-gray-600 transition duration-500 cursor-pointer"
         onClick={() => setShowBenefits(!showBenefits)}
         aria-expanded={showBenefits}
       >
