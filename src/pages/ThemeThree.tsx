@@ -46,7 +46,7 @@ const ThemeThree: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-500 via-red-500 via-yellow-300 to-green-500 text-black py-24 px-8 font-['Pacifico']">
+    <div className="min-h-screen bg-gradient-to-r from-blue-500 via-yellow-300 to-green-500 text-black py-24 px-8 font-['Pacifico']">
       {/* Heading */}
       <h1 className="sm:text-4xl font-bold mb-4 text-center text-white drop-shadow">
         Welcome To Awesome & Colorful Theme
@@ -68,7 +68,7 @@ const ThemeThree: React.FC = () => {
           {data.map((item: Item, index) => (
             <div
               key={item.id}
-              className={`p-4 bg-white bg-opacity-80 backdrop-blur-md rounded-xl border-4 shadow-lg hover:scale-105 transition duration-300 ${
+              className={`p-4 bg-white bg-opacity-80 backdrop-blur-md rounded-xl border-4 shadow-lg shadow-gray-700 hover:scale-105 transition duration-300  ${
                 colors[index % colors.length]
               }`}
             >
