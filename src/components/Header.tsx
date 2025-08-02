@@ -38,18 +38,18 @@ const Header: React.FC = () => {
       role="banner"
     >
       <ul className="flex sm:space-x-4 sm:px-4">
-        <li className="transition-transform duration-500 sm:p-4 p-2 cursor-pointer hover:scale-125 hover:opacity-60 sm:mx-6">
+        <li className="transition-transform duration-500 font-bold sm:p-4 px-2 py-4 cursor-pointer hover:scale-125 hover:opacity-60 sm:mx-6">
           <NavLink to="/">Logo</NavLink>
         </li>
 
         {/* navigation links */}
-        <li className="transition-transform duration-500 sm:p-4 p-2 cursor-pointer hover:scale-125 hover:opacity-60">
+        <li className="transition-transform duration-500 sm:p-4 px-2 py-4 cursor-pointer hover:scale-125 hover:opacity-60">
           <NavLink to="/">Home</NavLink>
         </li>
-        <li className="transition-transform duration-500 sm:p-4 p-2  cursor-pointer hover:scale-125 hover:opacity-60">
+        <li className="transition-transform duration-500 sm:p-4 px-2 py-4  cursor-pointer hover:scale-125 hover:opacity-60">
           <NavLink to="/about">About</NavLink>
         </li>
-        <li className="transition-transform duration-500 sm:p-4 p-2 cursor-pointer hover:scale-125 hover:opacity-60">
+        <li className="transition-transform duration-500 sm:p-4 px-2 py-4 cursor-pointer hover:scale-125 hover:opacity-60">
           <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
