@@ -68,7 +68,7 @@ const ThemeThree: React.FC = () => {
           {data.map((item: Item, index) => (
             <div
               key={item.id}
-              className={`p-4 bg-white bg-opacity-80 backdrop-blur-md rounded-xl border-4 shadow-lg shadow-gray-700 hover:scale-105 transition duration-300  ${
+              className={`p-4 bg-white bg-opacity-80 backdrop-blur-md cursor-pointer rounded-xl border-4 shadow-lg shadow-gray-700 hover:scale-105 transition duration-300  ${
                 colors[index % colors.length]
               }`}
             >
