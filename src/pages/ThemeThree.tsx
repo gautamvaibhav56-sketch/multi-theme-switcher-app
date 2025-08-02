@@ -64,7 +64,7 @@ const ThemeThree: React.FC = () => {
         </div>
       ) : (
         // Product Grid
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {data.map((item: Item, index) => (
             <div
               key={item.id}
@@ -76,7 +76,7 @@ const ThemeThree: React.FC = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-32 mx-auto object-contain mb-4"
+                className="size-32 mx-auto object-contain mb-4"
               />
 
               {/* Product Title */}
