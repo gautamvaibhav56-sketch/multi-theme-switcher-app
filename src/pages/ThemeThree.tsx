@@ -84,13 +84,13 @@ const ThemeThree: React.FC = () => {
                 className="text-md font-semibold mb-2 text-center text-gray-800"
                 title={item.title}
               >
-                {item.title.length > 30
-                  ? `${item.title.slice(0, 30)}...`
+                {item.title.length > 25
+                  ? `${item.title.slice(0, 25)}...`
                   : item.title}
               </h2>
 
               {/* Product Price */}
-              <p className="text-center text-gray-900 font-bold">
+              <p className="text-center text-gray-900 font-normal">
                 ${item.price.toFixed(2)}
               </p>
             </div>
