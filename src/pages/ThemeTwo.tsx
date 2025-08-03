@@ -21,7 +21,7 @@ const ThemeTwo: React.FC = () => {
       </aside>
 
       {/* Main content area */}
-      <main className="w-full sm:w-3/4 p-8 space-y-6">
+      <main className="w-full sm:w-3/4 p-6 space-y-6">
         <h1 className="text-4xl font-bold">Welcome To Dark Theme</h1>
         <p className="text-lg">
           Dark layout with a structured sidebar and classic serif typography.
