@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ProductContext } from "../contexts/ProductsContext";
+import { ProductContext } from "../contexts/ProductContext";
 /**
  * Tailwind color border classes to rotate through cards.
  */

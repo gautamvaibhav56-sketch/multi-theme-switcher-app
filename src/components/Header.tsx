@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { ThemeContext } from "../contexts/ThemesContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 import Dropdown from "./Dropdown";
 
 /**

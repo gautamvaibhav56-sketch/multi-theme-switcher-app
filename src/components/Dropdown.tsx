@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { ThemeContext, ThemeConfigItem } from "../contexts/ThemesContext";
+import { ThemeContext, ThemeConfigItem } from "../contexts/ThemeContext";
 
 /**
  * Dropdown component for switching themes.
