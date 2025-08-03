@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-
+import React, { useContext } from "react";
+import { ProductContext } from "../contexts/ProductsContext";
 /**
  * Tailwind color border classes to rotate through cards.
  */
@@ -11,40 +11,11 @@ const colors = [
 ];
 
 /**
- * Interface for product item shape from fakestoreapi.com
- */
-interface Item {
-  id: number;
-  title: string;
-  image: string;
-  price: number;
-}
-
-/**
  * ThemeThree component renders a colorful layout with dynamic product cards.
- * Data is fetched from a public fake store API.
+ * products are fetched from product context
  */
 const ThemeThree: React.FC = () => {
-  // Strongly type the data state as an array of Item
-  const [data, setData] = useState<Item[]>([]);
-
-  useEffect(() => {
-    /**
-     * Fetch product data from the fake store API and store the first 8 items.
-     */
-    const fetchProducts = async () => {
-      try {
-        const res = await fetch("https://fakestoreapi.com/products");
-        const json: Item[] = await res.json();
-        setData(json.slice(0, 8));
-      } catch (error) {
-        console.error("Failed to fetch products:", error);
-      }
-    };
-
-    fetchProducts();
-  }, []);
-
+  const {products} = useContext(ProductContext)
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 via-yellow-300 to-green-500 text-black py-24 px-8 font-['Pacifico']">
       {/* Heading */}
@@ -58,14 +29,14 @@ const ThemeThree: React.FC = () => {
       </p>
 
       {/* Loading State */}
-      {data.length === 0 ? (
+      {products.length === 0 ? (
         <div className="text-center sm:text-5xl animate-bounce text-white text-3xl">
           Hold On! Products are Loading 😃
         </div>
       ) : (
         // Product Grid
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {data.map((item: Item, index) => (
+          {products.map((item, index) => (
             <div
               key={item.id}
               className={`p-4 bg-white bg-opacity-80 backdrop-blur-md cursor-pointer rounded-xl border-4 shadow-lg shadow-gray-700 hover:scale-105 transition duration-300  ${

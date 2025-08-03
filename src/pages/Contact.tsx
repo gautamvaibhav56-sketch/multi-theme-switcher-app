@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../contexts/themesContext";
+import { ThemeContext } from "../contexts/ThemesContext";
 
 /**
  * Contact page component with theme-based styling.

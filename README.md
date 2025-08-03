@@ -12,7 +12,7 @@ A responsive, theme-switchable React application built with TypeScript, Tailwind
   - **Theme 3**: Colorful card grid using products from a public API
 - 🗂️ **Multi-page Support**: Home, About, Contact, and 404 Not Found pages
 - 🔄 **Theme Persistence**: Saves user selection in `localStorage`
-- ⚛️ **Context API**: Manages global theme state
+- ⚛️ **Context API**: Manages global theme state and fetches products so that API is not called multiple times
 - ⚙️ **TypeScript**: Fully typed components and state
 - 📦 **API Integration**: Data fetched from [Fake Store API](https://fakestoreapi.com/)
 - 💅 **Tailwind CSS**: Utility-first responsive styling
@@ -42,7 +42,8 @@ src/
 │   ├── Header.tsx
 │   └── Dropdown.tsx
 ├── contexts/
-│   └── themesContext.tsx
+|   ├── ProductsContext.tsx
+│   └── ThemesContext.tsx
 ├── pages/
 │   ├── ThemeOne.tsx
 │   ├── ThemeTwo.tsx

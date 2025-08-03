@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../contexts/themesContext";
+import { ThemeContext } from "../contexts/ThemesContext";
 
 /**
  * About component displays information about the theme chooser app.
